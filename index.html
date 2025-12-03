@@ -130,6 +130,7 @@
             gap: 18px;
             justify-content: center;
             margin-bottom: 32px;
+            flex-wrap: wrap;
         }
 
         .btn {
@@ -144,6 +145,7 @@
             text-decoration: none;
             outline: none;
             box-shadow: 0 4px 24px rgba(46, 196, 182, 0.09);
+            display: inline-block;
         }
 
         .btn-primary {
@@ -162,6 +164,17 @@
         }
 
         .btn-secondary:hover {
+            background: #2ec4b6;
+            color: #1b1b1b;
+        }
+
+        .btn-cv {
+            background: #393e46;
+            color: #2ec4b6;
+            border: 1.5px solid #2ec4b6;
+        }
+
+        .btn-cv:hover {
             background: #2ec4b6;
             color: #1b1b1b;
         }
@@ -533,17 +546,13 @@
     <!-- Hero Section with Photo Upload -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <!-- <div class="photo-frame">
-                <input type="file" id="photoInput" accept="image/*" style="display:none;">
-                    <img id="photoPreview" src="https://github.com/mohamed-gamal-dev/portfolio/blob/main/photo.jpg" alt="Personal Photo">
-                </label>
-            </div> -->
             <h1 class="hero-title">Hi, I'm <span class="highlight">Mohamed Gamal</span></h1>
             <p class="hero-subtitle">Data analyst</p>
             <p class="hero-description">I build exceptional digital experiences that make people's lives better.</p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                <a href="YOUR_CV_LINK_HERE" target="_blank" rel="noopener noreferrer" class="btn btn-cv">Download CV</a>
             </div>
         </div>
         <div class="scroll-down">
@@ -808,18 +817,6 @@
                 navbar.style.boxShadow = 'none';
             }
         });
-        // Photo upload and preview
-        document.getElementById('photoInput').addEventListener('change', function (event) {
-            const file = event.target.files[0];
-            if (file && file.type.startsWith('image')) {
-                const reader = new FileReader();
-                reader.onload = function (e) {
-                    document.getElementById('photoPreview').src = e.target.result;
-                };
-                reader.readAsDataURL(file);
-            }
-        });
-
     </script>
 </body>
 
