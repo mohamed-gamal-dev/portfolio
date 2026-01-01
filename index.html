@@ -406,6 +406,72 @@
             display: inline-block;
         }
 
+        /* Kaggle Section Styles */
+        .kagble-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 28px;
+        }
+
+        .kaggle-card {
+            background: #23272e;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 24px rgba(46, 196, 182, 0.07);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .kaggle-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .kaggle-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 2px solid #2ec4b6;
+        }
+
+        .kaggle-info {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .kaggle-info h3 {
+            font-size: 1.35rem;
+            margin-bottom: 12px;
+            color: #f7f7f7;
+        }
+
+        .kaggle-info p {
+            font-size: 0.95rem;
+            color: #b2becd;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .kaggle-btn {
+            text-align: center;
+            background: transparent;
+            color: #2ec4b6;
+            border: 1.5px solid #2ec4b6;
+            padding: 10px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            margin-top: auto;
+        }
+
+        .kaggle-btn:hover {
+            background: #2ec4b6;
+            color: #1b1b1b;
+        }
+
         /* Contact Section */
         .contact-content {
             display: flex;
@@ -514,7 +580,8 @@
                 padding: 0 12px;
             }
             .skills-grid,
-            .projects-grid {
+            .projects-grid,
+            .kagble-grid {
                 grid-template-columns: 1fr;
             }
             .section {
@@ -544,6 +611,8 @@
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
+                <!-- Added Kaggle Link -->
+                <li><a href="#kaggle" class="nav-link">Kaggle Work</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
@@ -599,7 +668,7 @@
         </div>
     </section>
 
-    <!-- Skills Section (Updated) -->
+    <!-- Skills Section -->
     <section id="skills" class="skills section">
         <div class="container">
             <h2 class="section-title">Technical Skills</h2>
@@ -642,7 +711,7 @@
         </div>
     </section>
 
-    <!-- Soft Skills Section (New) -->
+    <!-- Soft Skills Section -->
     <section id="soft-skills" class="section" style="background-color: #1e2229;">
         <div class="container">
             <h2 class="section-title">Soft Skills</h2>
@@ -663,10 +732,10 @@
         </div>
     </section>
 
-    <!-- Projects Section (Updated with CV Content) -->
+    <!-- Projects Section -->
     <section id="projects" class="projects section">
         <div class="container">
-            <h2 id = "projects" class="section-title">Featured Projects</h2>
+            <h2 id="projects-title" class="section-title">Featured Projects</h2>
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card">
@@ -751,10 +820,50 @@
         </div>
     </section>
 
+    <!-- NEW Kaggle Work Section -->
+    <section id="kaggle" class="section" style="background-color: #1e2229;">
+        <div class="container">
+            <h2 id = "kaggle" class="section-title">Some of Kaggle Work</h2>
+            <div class="kagble-grid">
+                <!-- Kaggle Card 1 -->
+                <div class="kaggle-card">
+                    <!-- Replace src with your actual dataset image -->
+                    <img src="https://picsum.photos/seed/tech1/400/200" alt="Dataset Analysis" class="kaggle-img">
+                    <div class="kaggle-info">
+                        <h3>Titanic Survival Analysis</h3>
+                        <p>Performed extensive EDA on passenger data, handled missing values, and applied Random Forest to predict survival outcomes with high accuracy.</p>
+                        <!-- Replace href with your Kaggle Notebook link -->
+                        <a href="https://www.kaggle.com/" target="_blank" class="kaggle-btn">View Notebook</a>
+                    </div>
+                </div>
+
+                <!-- Kaggle Card 2 -->
+                <div class="kaggle-card">
+                    <img src="https://picsum.photos/seed/tech2/400/200" alt="Housing Prices" class="kaggle-img">
+                    <div class="kaggle-info">
+                        <h3>Housing Price Prediction</h3>
+                        <p>Explored feature engineering techniques on housing data. Utilized Linear Regression and XGBoost to estimate property prices based on 80+ features.</p>
+                        <a href="https://www.kaggle.com/" target="_blank" class="kaggle-btn">View Notebook</a>
+                    </div>
+                </div>
+
+                <!-- Kaggle Card 3 -->
+                <div class="kaggle-card">
+                    <img src="https://picsum.photos/seed/tech3/400/200" alt="Customer Churn" class="kaggle-img">
+                    <div class="kaggle-info">
+                        <h3>Customer Churn Prediction</h3>
+                        <p>Analyzed telecom customer behavior to identify churn indicators. Created visualizations using Seaborn to present insights to stakeholders.</p>
+                        <a href="https://www.kaggle.com/" target="_blank" class="kaggle-btn">View Notebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact section">
         <div class="container">
-            <h2 id = "contact" class="section-title">Get In Touch</h2>
+            <h2 id="contact-title" class="section-title">Get In Touch</h2>
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Let's work together</h3>
