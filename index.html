@@ -406,7 +406,7 @@
             display: inline-block;
         }
 
-        /* Kaggle Section Styles */
+        /* Kaggle & Excel Grid Styles (Shared) */
         .kagble-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -470,6 +470,12 @@
         .kaggle-btn:hover {
             background: #2ec4b6;
             color: #1b1b1b;
+        }
+
+        /* Profile Link Container */
+        .profile-link-container {
+            text-align: center;
+            margin-top: 40px;
         }
 
         /* Contact Section */
@@ -613,6 +619,8 @@
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <!-- Added Kaggle Link -->
                 <li><a href="#kaggle" class="nav-link">Kaggle Work</a></li>
+                <!-- Added Excel Tasks Link -->
+                <li><a href="#excel" class="nav-link">Excel Tasks</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
@@ -820,10 +828,10 @@
         </div>
     </section>
 
-    <!-- NEW Kaggle Work Section -->
+    <!-- Kaggle Work Section -->
     <section id="kaggle" class="section" style="background-color: #1e2229;">
         <div class="container">
-            <h2 id = "kaggle" class="section-title">Some of Kaggle Work</h2>
+            <h2 class="section-title">Some of Kaggle Work</h2>
             <div class="kagble-grid">
                 <!-- Kaggle Card 1 -->
                 <div class="kaggle-card">
@@ -831,8 +839,6 @@
                     <img src="https://storage.googleapis.com/kaggle-datasets-images/5969230/9750039/832931e622b65a524588cfe910ffcf70/dataset-cover.png?t=2024-10-29-04-14-27" alt="Dataset Analysis" class="kaggle-img">
                     <div class="kaggle-info">
                         <h3>Loan data analysis & visualization</h3>
-                        <!-- <p>Performed extensive EDA on passenger data, handled missing values, and applied Random Forest to predict survival outcomes with high accuracy.</p> -->
-                        <!-- Replace href with your Kaggle Notebook link -->
                         <a href="https://www.kaggle.com/code/mohamed168/loan-data-analysis-visualization" target="_blank" class="kaggle-btn">View Notebook</a>
                     </div>
                 </div>
@@ -842,7 +848,6 @@
                     <img src="https://storage.googleapis.com/kaggle-datasets-images/1546318/2549419/519ae15c262818cdd94fa315325858aa/dataset-cover.png?t=2021-08-22-18-33-50" alt="Housing Prices" class="kaggle-img">
                     <div class="kaggle-info">
                         <h3>Marketing campaign analysis & visualization</h3>
-                        <!-- <p>Explored feature engineering techniques on housing data. Utilized Linear Regression and XGBoost to estimate property prices based on 80+ features.</p> -->
                         <a href="https://www.kaggle.com/code/mohamed168/marketing-campaign-analysis-visualization" target="_blank" class="kaggle-btn">View Notebook</a>
                     </div>
                 </div>
@@ -852,7 +857,6 @@
                     <img src="https://storage.googleapis.com/kaggle-datasets-images/284/617/f00b8c63f63ceb4b34d809447aa38e7e/dataset-thumbnail.jpeg" alt="Customer Churn" class="kaggle-img">
                     <div class="kaggle-info">
                         <h3>Video games sales analysis & visualization</h3>
-                        <!-- <p>Analyzed telecom customer behavior to identify churn indicators. Created visualizations using Seaborn to present insights to stakeholders.</p> -->
                         <a href="https://www.kaggle.com/code/mohamed168/video-games-sales-analysis-visualization" target="_blank" class="kaggle-btn">View Notebook</a>
                     </div>
                 </div>
@@ -862,8 +866,61 @@
                     <img src="https://storage.googleapis.com/kaggle-datasets-images/13996/18858/913cfa389fb368d9abbe2d0be6658b39/dataset-cover.jpg?t=2018-02-23-22-10-39" alt="Customer Churn" class="kaggle-img">
                     <div class="kaggle-info">
                         <h3>Telco customer churn analysis & visualization</h3>
-                        <!-- <p>Analyzed telecom customer behavior to identify churn indicators. Created visualizations using Seaborn to present insights to stakeholders.</p> -->
                         <a href="https://www.kaggle.com/code/mohamed168/telco-analysis-and-visualiztion" target="_blank" class="kaggle-btn">View Notebook</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- New Link for Kaggle Profile -->
+            <div class="profile-link-container">
+                <a href="https://www.kaggle.com/mohamed168" target="_blank" class="btn btn-secondary">To find more visit my Kaggle profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW Excel Tasks Section -->
+    <section id="excel" class="section">
+        <div class="container">
+            <h2 class="section-title">Excel Tasks</h2>
+            <div class="kagble-grid">
+                <!-- Excel Card 1 -->
+                <div class="kaggle-card">
+                    <!-- Using placeholder image -->
+                    <img src="https://picsum.photos/seed/excel1/400/200" alt="Sales Dashboard" class="kaggle-img">
+                    <div class="kaggle-info">
+                        <h3>Interactive Sales Dashboard</h3>
+                        <p>Created a comprehensive dashboard to track monthly sales performance, featuring pivot tables and slicers for dynamic filtering.</p>
+                        <a href="#" class="kaggle-btn">View File</a>
+                    </div>
+                </div>
+
+                <!-- Excel Card 2 -->
+                <div class="kaggle-card">
+                    <img src="https://picsum.photos/seed/excel2/400/200" alt="Financial Tracker" class="kaggle-img">
+                    <div class="kaggle-info">
+                        <h3>Financial Tracker & Budgeting</h3>
+                        <p>Automated expense tracking sheet utilizing conditional formatting and advanced formulas (VLOOKUP, INDEX/MATCH) for budget analysis.</p>
+                        <a href="#" class="kaggle-btn">View File</a>
+                    </div>
+                </div>
+
+                <!-- Excel Card 3 -->
+                <div class="kaggle-card">
+                    <img src="https://picsum.photos/seed/excel3/400/200" alt="HR Data Analysis" class="kaggle-img">
+                    <div class="kaggle-info">
+                        <h3>HR Data Analysis</h3>
+                        <p>Analyzed employee data to calculate turnover rates and demographics. Used nested IF statements and data validation for data integrity.</p>
+                        <a href="#" class="kaggle-btn">View File</a>
+                    </div>
+                </div>
+
+                <!-- Excel Card 4 -->
+                <div class="kaggle-card">
+                    <img src="https://picsum.photos/seed/excel4/400/200" alt="Inventory System" class="kaggle-img">
+                    <div class="kaggle-info">
+                        <h3>Inventory Management System</h3>
+                        <p>Designed a stock management template with drop-down menus and automated re-order alerts based on quantity thresholds.</p>
+                        <a href="#" class="kaggle-btn">View File</a>
                     </div>
                 </div>
             </div>
@@ -871,7 +928,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <section id="contact" class="contact section" style="background-color: #1e2229;">
         <div class="container">
             <h2 id="contact-title" class="section-title">Get In Touch</h2>
             <div class="contact-content">
