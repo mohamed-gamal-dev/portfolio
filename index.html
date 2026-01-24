@@ -258,6 +258,9 @@
             box-shadow: 0 2px 8px rgba(46, 196, 182, 0.08);
             text-align: center;
             transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .skill-card:hover {
@@ -406,7 +409,7 @@
             display: inline-block;
         }
 
-        /* Kaggle & Excel Grid Styles (Shared) */
+        /* Kagble Grid Styles (Shared) */
         .kagble-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -693,9 +696,30 @@
                     </div>
                 </div>
                 
-                <!-- Visualization Tools -->
+                <!-- NEW: Excel Mastery Card -->
                 <div class="skill-card">
                     <div class="skill-icon">📊</div>
+                    <h3>Excel Mastery</h3>
+                    <div class="skill-tags">
+                        <!-- Core Tools -->
+                        <span>Pivot Tables</span>
+                        <span>Pivot Charts</span>
+                        <span>Power Pivot</span>
+                        <span>Power Query</span>
+                        <!-- DAX & Formulas -->
+                        <span>DAX</span>
+                        <span>XLOOKUP</span>
+                        <span>Index/Match</span>
+                        <!-- Advanced Features -->
+                        <span>Dashboarding</span>
+                        <span>Conditional Formatting</span>
+                        <span>Data Validation</span>
+                    </div>
+                </div>
+
+                <!-- Visualization Tools -->
+                <div class="skill-card">
+                    <div class="skill-icon">📈</div>
                     <h3>Data Visualization</h3>
                     <div class="skill-tags">
                         <span>Matplotlib</span>
@@ -878,10 +902,10 @@
         </div>
     </section>
 
-    <!-- NEW Excel Tasks Section -->
+    <!-- Excel Tasks Section (Updated Descriptions to match skills) -->
     <section id="excel" class="section">
         <div class="container">
-            <h2 id = "excel" class="section-title">Excel Tasks</h2>
+            <h2 id="excel" class="section-title">Excel Tasks</h2>
             <div class="kagble-grid">
                 <!-- Excel Card 1 -->
                 <div class="kaggle-card">
@@ -889,7 +913,7 @@
                     <img src="https://picsum.photos/seed/excel1/400/200" alt="Sales Dashboard" class="kaggle-img">
                     <div class="kaggle-info">
                         <h3>Interactive Sales Dashboard</h3>
-                        <p>Created a comprehensive dashboard to track monthly sales performance, featuring pivot tables and slicers for dynamic filtering.</p>
+                        <p>Built a comprehensive <strong>Power Pivot</strong> dashboard to track monthly sales performance. Used <strong>DAX</strong> measures for YOY growth and <strong>Slicers</strong> for dynamic regional filtering.</p>
                         <a href="#" class="kaggle-btn">View File</a>
                     </div>
                 </div>
@@ -899,7 +923,7 @@
                     <img src="https://picsum.photos/seed/excel2/400/200" alt="Financial Tracker" class="kaggle-img">
                     <div class="kaggle-info">
                         <h3>Financial Tracker & Budgeting</h3>
-                        <p>Automated expense tracking sheet utilizing conditional formatting and advanced formulas (VLOOKUP, INDEX/MATCH) for budget analysis.</p>
+                        <p>Automated expense tracking using <strong>Power Query</strong> to merge bank statements. Applied <strong>Conditional Formatting</strong> for variance analysis and advanced formulas for forecasting.</p>
                         <a href="#" class="kaggle-btn">View File</a>
                     </div>
                 </div>
@@ -909,7 +933,7 @@
                     <img src="https://picsum.photos/seed/excel3/400/200" alt="HR Data Analysis" class="kaggle-img">
                     <div class="kaggle-info">
                         <h3>HR Data Analysis</h3>
-                        <p>Analyzed employee data to calculate turnover rates and demographics. Used nested IF statements and data validation for data integrity.</p>
+                        <p>Analyzed employee demographics using <strong>Pivot Tables</strong>. Implemented <strong>Data Validation</strong> rules to maintain input integrity and nested <strong>IF/IFS</strong> formulas for status categorization.</p>
                         <a href="#" class="kaggle-btn">View File</a>
                     </div>
                 </div>
@@ -919,7 +943,7 @@
                     <img src="https://picsum.photos/seed/excel4/400/200" alt="Inventory System" class="kaggle-img">
                     <div class="kaggle-info">
                         <h3>Inventory Management System</h3>
-                        <p>Designed a stock management template with drop-down menus and automated re-order alerts based on quantity thresholds.</p>
+                        <p>Designed a stock management template featuring <strong>XLOOKUP</strong> for real-time retrieval and automated <strong>Pivot Charts</strong> to visualize reorder levels and stock trends.</p>
                         <a href="#" class="kaggle-btn">View File</a>
                     </div>
                 </div>
