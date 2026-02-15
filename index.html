@@ -442,11 +442,14 @@
             display: flex;
             flex-direction: column;
             flex-grow: 1;
+            justify-content: center; /* Center content vertically for simple cards */
+            align-items: center; /* Center content horizontally */
+            text-align: center;
         }
 
         .kaggle-info h3 {
             font-size: 1.35rem;
-            margin-bottom: 12px;
+            margin-bottom: 20px;
             color: #f7f7f7;
         }
 
@@ -468,6 +471,7 @@
             font-weight: 500;
             transition: all 0.3s;
             margin-top: auto;
+            display: inline-block; /* Ensure button behaves correctly */
         }
 
         .kaggle-btn:hover {
@@ -622,7 +626,6 @@
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#kaggle" class="nav-link">Kaggle Work</a></li>
                 <li><a href="#excel" class="nav-link">Excel Tasks</a></li>
-                <!-- Added SQL ERDs Link -->
                 <li><a href="#sql-erds" class="nav-link">SQL ERDs</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -952,21 +955,25 @@
             <div class="kagble-grid">
                 <!-- ERD Card 1 -->
                 <div class="kaggle-card">
-                    <!-- <img src="https://drive.google.com/file/d/1jonmkLfhB2iPzvaU5Z7a7gMQ4TK9xytL/view?usp=drive_link" alt="ERD Project 1" class="kaggle-img"> -->
                     <div class="kaggle-info">
-                        <h3>Company management system</h3>
-                        <!-- <p>Entity Relationship Diagram designed for a scalable e-commerce platform. Includes entities for Users, Orders, Products, and Payments with normalized relationships.</p> -->
+                        <h3>Company Management System</h3>
                         <a href="https://drive.google.com/file/d/1jonmkLfhB2iPzvaU5Z7a7gMQ4TK9xytL/view?usp=drive_link" target="_blank" class="kaggle-btn">View ERD</a>
                     </div>
                 </div>
 
                 <!-- ERD Card 2 -->
                 <div class="kaggle-card">
-                    <img src="https://picsum.photos/seed/erd2/400/200" alt="ERD Project 2" class="kaggle-img">
                     <div class="kaggle-info">
-                        <h3>University Management System</h3>
-                        <p>Schema design for managing students, courses, enrollments, and faculty. Visualized relationships between departments and academic records.</p>
-                        <a href="#" class="kaggle-btn">View ERD</a>
+                        <h3>Courses management system</h3>
+                        <a href="https://drive.google.com/file/d/1Pg8FdX5MPH3cZOPokFWlsI6oJdJEflzZ/view?usp=sharing" target = "_blank" class="kaggle-btn">View ERD</a>
+                    </div>
+                </div>
+
+                 <!-- ERD Card 3 -->
+                <div class="kaggle-card">
+                    <div class="kaggle-info">
+                        <h3>Video rental management system</h3>
+                        <a href="https://drive.google.com/file/d/1b2vDPUwDgxV9KKc0iRoc4h-IZghusCoY/view?usp=sharing" target = "_blank" class="kaggle-btn">View ERD</a>
                     </div>
                 </div>
             </div>
