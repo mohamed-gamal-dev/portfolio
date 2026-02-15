@@ -409,7 +409,7 @@
             display: inline-block;
         }
 
-        /* Kagble Grid Styles (Shared) */
+        /* Kagble Grid Styles (Shared with Excel and ERDs) */
         .kagble-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -620,10 +620,10 @@
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
-                <!-- Added Kaggle Link -->
                 <li><a href="#kaggle" class="nav-link">Kaggle Work</a></li>
-                <!-- Added Excel Tasks Link -->
                 <li><a href="#excel" class="nav-link">Excel Tasks</a></li>
+                <!-- Added SQL ERDs Link -->
+                <li><a href="#sql-erds" class="nav-link">SQL ERDs</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
@@ -696,21 +696,18 @@
                     </div>
                 </div>
                 
-                <!-- NEW: Excel Mastery Card -->
+                <!-- Excel Mastery Card -->
                 <div class="skill-card">
                     <div class="skill-icon">📊</div>
                     <h3>Excel Mastery</h3>
                     <div class="skill-tags">
-                        <!-- Core Tools -->
                         <span>Pivot Tables</span>
                         <span>Pivot Charts</span>
                         <span>Power Pivot</span>
                         <span>Power Query</span>
-                        <!-- DAX & Formulas -->
                         <span>DAX</span>
                         <span>XLOOKUP</span>
                         <span>Index/Match</span>
-                        <!-- Advanced Features -->
                         <span>Dashboarding</span>
                         <span>Conditional Formatting</span>
                         <span>Data Validation</span>
@@ -728,7 +725,6 @@
                         <span>Descriptive Statistics</span>
                     </div>
                 </div>
-
 
                 <!-- Tools & Methods -->
                 <div class="skill-card">
@@ -859,7 +855,6 @@
             <div class="kagble-grid">
                 <!-- Kaggle Card 1 -->
                 <div class="kaggle-card">
-                    <!-- Replace src with your actual dataset image -->
                     <img src="https://storage.googleapis.com/kaggle-datasets-images/5969230/9750039/832931e622b65a524588cfe910ffcf70/dataset-cover.png?t=2024-10-29-04-14-27" alt="Dataset Analysis" class="kaggle-img">
                     <div class="kaggle-info">
                         <h3>Loan data analysis & visualization</h3>
@@ -895,21 +890,20 @@
                 </div>
             </div>
             
-            <!-- New Link for Kaggle Profile -->
+            <!-- Link for Kaggle Profile -->
             <div class="profile-link-container">
                 <a href="https://www.kaggle.com/work/code" target="_blank" class="btn btn-secondary">To find more visit my Kaggle profile</a>
             </div>
         </div>
     </section>
 
-    <!-- Excel Tasks Section (Updated Descriptions to match skills) -->
+    <!-- Excel Tasks Section -->
     <section id="excel" class="section">
         <div class="container">
-            <h2 id="excel" class="section-title">Excel Tasks</h2>
+            <h2 class="section-title">Excel Tasks</h2>
             <div class="kagble-grid">
                 <!-- Excel Card 1 -->
                 <div class="kaggle-card">
-                    <!-- Using placeholder image -->
                     <img src="https://picsum.photos/seed/excel1/400/200" alt="Sales Dashboard" class="kaggle-img">
                     <div class="kaggle-info">
                         <h3>Interactive Sales Dashboard</h3>
@@ -945,6 +939,34 @@
                         <h3>Inventory Management System</h3>
                         <p>Designed a stock management template featuring <strong>XLOOKUP</strong> for real-time retrieval and automated <strong>Pivot Charts</strong> to visualize reorder levels and stock trends.</p>
                         <a href="#" class="kaggle-btn">View File</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SQL ERDs Section -->
+    <section id="sql-erds" class="section" style="background-color: #1e2229;">
+        <div class="container">
+            <h2 class="section-title">SQL ERDs</h2>
+            <div class="kagble-grid">
+                <!-- ERD Card 1 -->
+                <div class="kaggle-card">
+                    <img src="https://drive.google.com/file/d/1jonmkLfhB2iPzvaU5Z7a7gMQ4TK9xytL/view?usp=drive_link" alt="ERD Project 1" class="kaggle-img">
+                    <div class="kaggle-info">
+                        <h3>Company management system</h3>
+                        <p>Entity Relationship Diagram designed for a scalable e-commerce platform. Includes entities for Users, Orders, Products, and Payments with normalized relationships.</p>
+                        <a href="https://drive.google.com/file/d/1jonmkLfhB2iPzvaU5Z7a7gMQ4TK9xytL/view?usp=drive_link" class="kaggle-btn">View ERD</a>
+                    </div>
+                </div>
+
+                <!-- ERD Card 2 -->
+                <div class="kaggle-card">
+                    <img src="https://picsum.photos/seed/erd2/400/200" alt="ERD Project 2" class="kaggle-img">
+                    <div class="kaggle-info">
+                        <h3>University Management System</h3>
+                        <p>Schema design for managing students, courses, enrollments, and faculty. Visualized relationships between departments and academic records.</p>
+                        <a href="#" class="kaggle-btn">View ERD</a>
                     </div>
                 </div>
             </div>
